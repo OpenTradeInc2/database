@@ -68,6 +68,7 @@ CREATE TABLE `ot_custom_inventory_file_items` (
   `edited_by` int(11) DEFAULT NULL,
   `deleted` tinyint(1) NOT NULL,
   `status` varchar(45) DEFAULT NULL,
+  `category` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`inventory_file_item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
