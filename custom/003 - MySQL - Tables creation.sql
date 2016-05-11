@@ -40,17 +40,16 @@ CREATE TABLE `ot_custom_inventory_file` (
   `added_by` int(11) NOT NULL,
   `added_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `deleted` tinyint(1) NOT NULL,
+  `status` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`inventory_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `ot_custom_inventory_file_items` (
   `inventory_file_item_id` int(11) NOT NULL AUTO_INCREMENT,
   `inventory_file_id` int(11) NOT NULL,
-  `product_line` varchar(100) DEFAULT NULL,
+  `sku_id` varchar(45) DEFAULT NULL,
   `sku_description` varchar(300) DEFAULT NULL,
-  `quantity_libs` decimal(3,2) DEFAULT NULL,
-  `sum_quantity` decimal(3,2) DEFAULT NULL,
-  `total_cost` decimal(9,2) DEFAULT NULL,
+  `product_line` varchar(100) DEFAULT NULL,
   `lot_number` varchar(20) DEFAULT NULL,
   `issue_type` varchar(100) DEFAULT NULL,
   `li_specialist` varchar(100) DEFAULT NULL,
@@ -60,11 +59,15 @@ CREATE TABLE `ot_custom_inventory_file_items` (
   `lmd` varchar(20) DEFAULT NULL,
   `id_month` varchar(20) DEFAULT NULL,
   `days_under_current_path` int(11) DEFAULT NULL,
+  `quantity_libs` decimal(3,2) DEFAULT NULL,
+  `sum_quantity` int(11) DEFAULT NULL,
+  `total_cost` decimal(9,2) DEFAULT NULL,
   `added_by` int(11) NOT NULL,
   `added_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `edited_date` timestamp NULL DEFAULT NULL,
   `edited_by` int(11) DEFAULT NULL,
   `deleted` tinyint(1) NOT NULL,
+  `status` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`inventory_file_item_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
