@@ -5,4 +5,4 @@ CREATE TABLE `ot_custom_distributor_sku` (
   `added_by` int(11) DEFAULT NULL,
   `added_date` datetime DEFAULT NULL,
   PRIMARY KEY (`id_sku_distributor`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1$$
+) ENGINE=InnoDB AUTO_INCREMENT=1;
