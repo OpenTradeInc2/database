@@ -22,7 +22,7 @@ CREATE  TABLE `ot_custom_request_information` (
   `edited_date` DATETIME NULL ,
   PRIMARY KEY (`purchase_order_id`) );
   
-  CREATE  TABLE `wordpressot`.`ot_custom_offer_information` (
+  CREATE  TABLE `ot_custom_offer_information` (
   `offer_information_id` INT NOT NULL AUTO_INCREMENT ,
   `product_id` INT NULL ,
   `user_id` INT NULL ,
@@ -34,3 +34,5 @@ CREATE  TABLE `ot_custom_request_information` (
   `added_date` DATETIME NULL ,
   `edited_date` DATETIME NULL ,
   PRIMARY KEY (`offer_information_id`) );
+  
+  ALTER TABLE `ot_custom_request_information` ADD COLUMN `file_location` TEXT NULL  AFTER `user_id` ;
