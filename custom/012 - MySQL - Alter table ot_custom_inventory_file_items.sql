@@ -1,0 +1,17 @@
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `distributor_name`		VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `distributor_sku_id` 	VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `distributor_sku_description` VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `packaging_type` 		VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `packaging_unit` 		INT(11) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `packaging_measure` 	VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `packaging_weight_lb` 	DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `packaging_weight_kg` 	DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `total_weight_lb` 		DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `total_weight_kg` 		DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `price_unit`			DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `price_lb` 				DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `price_kg` 				DECIMAL(9,2) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `warehouse_location_id` VARCHAR(10) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `warehouse_location_address`	VARCHAR(45) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` ADD COLUMN `line_number` 			INT(11) NULL;
+ALTER TABLE `ot_custom_inventory_file_items` CHANGE COLUMN `quantity_libs` `quantity` DECIMAL(9,2) NULL;

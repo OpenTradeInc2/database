@@ -1,0 +1,1 @@
+ALTER TABLE `ot_custom_distributor_sku` ADD COLUMN `post_id` INT NULL  AFTER `id_distributor` ;

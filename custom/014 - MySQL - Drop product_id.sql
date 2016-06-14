@@ -1,0 +1,1 @@
+ALTER TABLE `ot_custom_request_information` DROP COLUMN `product_id` ;
