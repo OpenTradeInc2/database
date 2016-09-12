@@ -1,0 +1,1 @@
+ALTER TABLE `k1d83280785704`.`ot_custom_distributor` ADD COLUMN `type` VARCHAR(45) NULL  AFTER `country` ;
